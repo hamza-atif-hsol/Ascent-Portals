@@ -10,7 +10,7 @@ const Accounts = () => {
   return (
     <div className="bg-gradient-to-r from-[#0c2138] from-0% to-[#113c4d] to-100% h-screen">
       <SideBar portalType="Customer" />
-      <div className="py-10 ml-16 px-12">
+      <div className="py-10 ">
         <Header
           heading="Domain Accounts"
           subheading="Customer Portal"
