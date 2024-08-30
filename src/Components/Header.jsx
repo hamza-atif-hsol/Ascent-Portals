@@ -43,6 +43,7 @@ const Header = ({ subheading, heading, showButton, onButtonClick }) => {
 
     </div>
     <hr className=" w-[87%] border-t-[1px] border-t-[rgb(85,85,85)] mx-[120px]" />
+    
     </>
   );
 };
