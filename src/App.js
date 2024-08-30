@@ -13,7 +13,7 @@ function App() {
     <Router>
         <SideBar portalType="Customer" />
       <div >
-        <Header heading="Customer Portal" subheading="Domain Acounts" showButton={true} onButtonClick={handleClick}/>
+        <Header heading="Domain Accounts" subheading="Customer Portal" showButton={true} onButtonClick={handleClick}/>
       </div>
 
     </Router>
