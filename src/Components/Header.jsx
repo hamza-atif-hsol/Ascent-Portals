@@ -8,15 +8,16 @@ import {
   FaTrashAlt,
   FaCheck,
 } from "react-icons/fa";
+import IconButton from './IconButton';
 
 const Header = ({ subheading, heading, showButton, onButtonClick }) => {
   return (
     <>
     <div className="flex items-center">
-      {/* Left Side: Subheading and Heading */}
-      <div className='w-[80%]'>
-        <h6 className="text-xs text-[#6e84a3] uppercase">{subheading}</h6>
-        <h1 className="text-3xl text-white">{heading}</h1>
+      {/ Left Side: Subheading and Heading /}
+      <div className='my-[35px] w-[80%]'>
+        <h6 className="mx-[130px] text-xs text-[#D1C7C5]">{subheading}</h6>
+        <h1 className="mx-[130px] text-3xl text-white">{heading}</h1>
       </div>
 
       {showButton && (
@@ -35,7 +36,11 @@ const Header = ({ subheading, heading, showButton, onButtonClick }) => {
         icon={<FaCreditCard />}
         iconPosition="left"
       />
-      )}
+
+    )}
+    <IconButton icon={<FaEye/>} className=" text-blue-500" />
+    <IconButton icon={<FaRegFileAlt/>} className=" text-gray-400" />
+
     </div>
     <hr className=" w-[87%] border-t-[1px] border-t-[rgb(85,85,85)] mx-[120px]" />
     </>
