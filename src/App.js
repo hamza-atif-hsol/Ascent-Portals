@@ -1,22 +1,14 @@
-import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import logo from './logo.svg';
-import './App.css';
-import SideBar from "./Components/SideBar";
-import Header from "./Components/Header"
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AccountScreen from "./Components/Screens/Accounts";
 
 function App() {
-  function handleClick(){
-    console.log("test");
-  }
   return (
-    <Router>
-        <SideBar portalType="Customer" />
-      <div >
-        <Header heading="Domain Accounts" subheading="Customer Portal" showButton={true} onButtonClick={handleClick}/>
-      </div>
-
-    </Router>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/accounts" element={<AccountScreen />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
