@@ -13,12 +13,14 @@ import IconButton from './IconButton';
 const Header = ({ subheading, heading, showButton, onButtonClick }) => {
   return (
     <>
-    <div className="flex items-center">
-      {/* {/ Left Side: Subheading and Heading /} */}
-      <div className='my-[35px] w-[80%]'>
-        <h6 className="mx-[130px] text-xs text-[#D1C7C5]">{subheading}</h6>
-        <h1 className="mx-[130px] text-3xl text-white">{heading}</h1>
-      </div>
+      <div className="flex items-center justify-between">
+        {/* Left Side: Subheading and Heading */}
+        <div className="flex flex-col gap-1">
+          <h6 className="text-[10px] text-[#6e84a3] uppercase tracking-wider">
+            {subheading}
+          </h6>
+          <h1 className="text-2xl text-white">{heading}</h1>
+        </div>
 
       {showButton && (
         // <button
@@ -28,22 +30,16 @@ const Header = ({ subheading, heading, showButton, onButtonClick }) => {
         //   Create an Account
         // </button>
 
-
-        <Button
-        text="Create An Account"
-        // onClick={handleClick}
-        className="bg-[#0d6efd] text-white rounded-lg p-4   "
-        // icon={<FaCreditCard />}
-        // iconPosition="left"
-      />
-
-    )}
-    {/* <IconButton icon={<FaEye/>} className=" text-blue-500" />
-    <IconButton icon={<FaRegFileAlt/>} className=" text-gray-400" /> */}
-
-    </div>
-    <hr className=" w-[87%] border-t-[1px] border-t-[rgb(85,85,85)] mx-[120px]" />
-    
+          <Button
+            text="Create An Account"
+            // onClick={handleClick}
+            className="bg-[#2c7be5] text-white font-light mr-8 rounded-lg py-6 px-8 "
+            // icon={<FaCreditCard />}
+            iconPosition="left"
+          />
+        )}
+      </div>
+      <hr className=" w-full border-t-[1px] border-t-[#6e84a3] opacity-30 my-6" />
     </>
   );
 };
