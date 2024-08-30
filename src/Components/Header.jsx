@@ -15,7 +15,7 @@ const Header = ({ subheading, heading, showButton, onButtonClick }) => {
     <div className="flex items-center">
       {/* Left Side: Subheading and Heading */}
       <div className='my-[35px] w-[80%]'>
-        <h6 className="mx-[130px] text-xs text-[#D1C7C5]">{subheading}</h6>
+        <h6 className="mx-[130px] text-xs text-[#6e84a3] uppercase">{subheading}</h6>
         <h1 className="mx-[130px] text-3xl text-white">{heading}</h1>
       </div>
 

@@ -100,44 +100,47 @@ const SideBar = ({ portalType }) => {
           />
           <div className="flex flex-col content-between h-screen">
             <div className="flex-grow flex flex-col gap-6 items-center mt-8">
-              <Link to="">
-                <FiHome
-                  size={18}
-                  className="text-[#6e84a3] hover:text-white transition-colors duration-200"
-                />
-              </Link>
-              <Link to="">
-                <IoDocumentsOutline
-                  size={18}
-                  className="text-[#6e84a3] hover:text-white transition-colors duration-200"
-                />
-              </Link>
-              <Link to="">
-                <MdOutlineAccountTree
-                  size={18}
-                  className="text-[#6e84a3] hover:text-white transition-colors duration-200"
-                />
-              </Link>
-              <Link to="">
-                <TbUsers
-                  size={14}
-                  className="text-[#6e84a3] hover:text-white transition-colors duration-200"
-                />
-              </Link>
-              <Link to="">
-                <TbSwitch
-                  size={18}
-                  className="text-[#6e84a3] hover:text-white transition-colors duration-200"
-                />
-              </Link>
-
+              <Tooltip content="Dashboard">
+                <Link to="">
+                  <FiHome
+                    size={18}
+                    className="text-[#6e84a3] hover:text-white transition-colors duration-200"
+                  />
+                </Link>
+              </Tooltip>
+              <Tooltip content="Documents">
+                <Link to="">
+                  <IoDocumentsOutline
+                    size={18}
+                    className="text-[#6e84a3] hover:text-white transition-colors duration-200"
+                  />
+                </Link>
+              </Tooltip>
+              <Tooltip content="Accounts">
+                <Link to="">
+                  <MdOutlineAccountTree
+                    size={18}
+                    className="text-[#6e84a3] hover:text-white transition-colors duration-200"
+                  />
+                </Link>
+              </Tooltip>
+              <Tooltip content="Identities">
+                <Link to="">
+                  <TbUsers
+                    size={14}
+                    className="text-[#6e84a3] hover:text-white transition-colors duration-200"
+                  />
+                </Link>
+              </Tooltip>
+              <Tooltip content="Walkthrough">
+                <Link to="">
+                  <PiCompass
+                    size={18}
+                    className="text-[#6e84a3] hover:text-white transition-colors duration-200"
+                  />
+                </Link>
+              </Tooltip>
               <hr className="w-full border-t border-[#6e84a3] opacity-10" />
-              <Link to="">
-                <PiCompass
-                  size={18}
-                  className="text-[#6e84a3] hover:text-white transition-colors duration-200"
-                />
-              </Link>
             </div>
             {/* Bottom Section */}
             <div className="flex flex-col items-center gap-6">
@@ -160,19 +163,22 @@ const SideBar = ({ portalType }) => {
           />
           <div className="flex flex-col content-between h-screen">
             <div className="flex-grow flex flex-col gap-6 items-center mt-8">
-              <Link to="">
-                <RxDashboard
-                  size={18}
-                  className="text-[#6e84a3] hover:text-white transition-colors duration-200"
-                />
-              </Link>
-
-              <Link to="">
-                <TbSwitch
-                  size={18}
-                  className="text-[#6e84a3] hover:text-white transition-colors duration-200"
-                />
-              </Link>
+              <Tooltip content="Domains">
+                <Link to="">
+                  <RxDashboard
+                    size={18}
+                    className="text-[#6e84a3] hover:text-white transition-colors duration-200"
+                  />
+                </Link>
+              </Tooltip>
+              <Tooltip content="Switch">
+                <Link to="">
+                  <TbSwitch
+                    size={18}
+                    className="text-[#6e84a3] hover:text-white transition-colors duration-200"
+                  />
+                </Link>
+              </Tooltip>
 
               <hr className="w-full border-t border-[#6e84a3] opacity-10" />
             </div>
