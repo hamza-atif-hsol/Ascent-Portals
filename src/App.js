@@ -1,24 +1,22 @@
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
+import SideBar from "./Components/SideBar";
+import Header from "./Components/Header"
 
 function App() {
+  function handleClick(){
+    console.log("test");
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+        <SideBar portalType="Customer" />
+      <div >
+        <Header heading="Customer Portal" subheading="Domain Acounts" showButton={true} onButtonClick={handleClick}/>
+      </div>
+
+    </Router>
   );
 }
 
