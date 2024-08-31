@@ -1,24 +1,16 @@
 import React from "react";
 import Button from "./Button";
-import {
-  FaRegFileAlt,
-  FaEye,
-  FaCreditCard,
-  FaToggleOn,
-  FaTrashAlt,
-  FaCheck,
-} from "react-icons/fa";
 
 const Header = ({ subheading, heading, showButton, onButtonClick }) => {
   return (
-    <>
+    <div className="ml-6">
       <div className="flex items-center justify-between">
         {/* Left Side: Subheading and Heading */}
         <div className="flex flex-col gap-1">
           <h6 className="text-[10px] text-[#6e84a3] uppercase tracking-wider">
             {subheading}
           </h6>
-          <h1 className="text-2xl text-white">{heading}</h1>
+          <h1 className="text-2xl text-white font-medium">{heading}</h1>
         </div>
 
         {showButton && (
@@ -38,8 +30,8 @@ const Header = ({ subheading, heading, showButton, onButtonClick }) => {
           />
         )}
       </div>
-      <hr className=" w-full border-t-[1px] border-t-[#6e84a3] opacity-30 my-6" />
-    </>
+      <hr className=" w-full border-t-[1px] border-t-[#6e84a3] opacity-20 my-6" />
+    </div>
   );
 };
 
