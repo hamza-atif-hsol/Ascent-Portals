@@ -81,31 +81,29 @@ const Card = () => {
     </div>
   );
   return (
-    <div className="bg-gradient-to-b from-[#0e325a] from-10% to-[#141c3a] to-100% w-full rounded-lg border-[#1b3050] border-[1px] shadow-[1px_10px_24px_rgba(0,0,0,0.9)] mb-6">
+    <div className="bg-gradient-to-b from-[#0e325a] from-10% to-[#141c3a] to-100% w-full rounded-lg border-[#1b3050] border-[1px] shadow-[1px_10px_24px_rgba(0,0,0,0.9)] mb-6 px-4">
       <div className="flex flex-col items-center gap-4">
         <CardHeader FundName="Demo Funds" showButton={false} showLogo={true} />
 
-        <div className="flex justify-center gap-6 mb-5 w-full">
-          <div className="w-[46%]">
+        <div className="flex flex-col gap-6 md:flex-row justify-center md:justify-center mb-5 w-full">
+          <div className="w-full md:ml-4 ">
             <MiniCards
               leftContent={leftContentCard}
-              // rightContent={rightContent}
               showUserIcon={true}
               showLeft={true}
               showRight={false}
               leftClassName="text-xs font-medium"
-              // rightClassName="text-gray-400"
             />
           </div>
-          <div className="w-[46%]">
+          <div className="w-full md:mr-4 ">
             <MiniCards
               leftContent={leftContentCard2}
               rightContent={rightContentCard2}
               showUserIcon={false}
               showLeft={true}
               showRight={true}
-              leftClassName="text-xs font-medium text-[#6881a3] my-4"
-              rightClassName="text-xs font-medium text-[#6881a3] my-4"
+              leftClassName="text-xs font-medium text-[#6881a3] md:my-4"
+              rightClassName="text-xs font-medium text-[#6881a3] md:my-4"
             />
           </div>
         </div>

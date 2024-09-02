@@ -3,14 +3,14 @@ import Button from "./Button";
 
 const Header = ({ subheading, heading, showButton, onButtonClick }) => {
   return (
-    <div className="ml-6">
-      <div className="flex items-center justify-between">
+    <div className="ml-6 sm:mt-0 mt-10 ">
+      <div className="flex items-center justify-between ">
         {/* Left Side: Subheading and Heading */}
         <div className="flex flex-col gap-1">
-          <h6 className="text-[10px] text-[#6e84a3] uppercase tracking-wider">
+          <h6 className="text-[10px] text-[#6e84a3] uppercase tracking-wider ">
             {subheading}
           </h6>
-          <h1 className="text-2xl text-white font-medium">{heading}</h1>
+          <h1 className="sm:text-2xl text-xs text-white sm:font-medium ">{heading}</h1>
         </div>
 
         {showButton && (
@@ -24,7 +24,7 @@ const Header = ({ subheading, heading, showButton, onButtonClick }) => {
           <Button
             text="Create An Account"
             // onClick={handleClick}
-            className="bg-[#2c7be5] text-white font-light mr-8 rounded-lg py-6 px-8 "
+            className="bg-[#2c7be5] text-white font-light mr-8 rounded-lg py-6 px-8 text-sm sm:text-md"
             // icon={<FaCreditCard />}
             iconPosition="left"
           />

@@ -9,15 +9,16 @@ const Accounts = () => {
   }
 
   return (
-    <div className="bg-gradient-to-r from-[#0c1f37] from-10% to-[#103649] to-90% ">
+    <div className="bg-gradient-to-r from-[#0c1f37] from-10% to-[#103649] to-90% flex flex-col md:flex-row">
       <SideBar portalType="Customer" />
-      <div className="py-6 ml-9 px-10">
+      <div className="flex-1 py-6 sm:ml-9 sm:px-10 px-4">
         <Header
           heading="My Accounts"
           subheading="Overview"
           showButton={true}
           onButtonClick={handleClick}
         />
+        
         <Card />
         <Card />
         <Card />
