@@ -1,3 +1,10 @@
 body {
   background: linear-gradient(to right, #0c2138 0%, #113c4d 100%);
 }
+
+
+.main-container{
+  width: 80%;
+  background: linear-gradient(to bottom, #0d345d 0%, #151c39 100%);
+  
+}

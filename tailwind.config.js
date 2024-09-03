@@ -27,6 +27,6 @@ module.exports = {
           "linear-gradient(to bottom, #0d345d 0%, #151c39 100%)",
       },
     },
+    plugins: [],
   },
-  plugins: [],
 };
