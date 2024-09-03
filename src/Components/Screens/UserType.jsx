@@ -330,7 +330,7 @@ const EntityTypeSelection = () => {
 
   return (
     <>
-      <SideBar portalType="Customer" />
+      {/* <SideBar portalType="Customer" /> */}
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-[#0c1f37] from-10% to-[#103649] to-90%">
         <div className="bg-gradient-to-r from-[#0d3b66] from-10% to-[#0b1e33] to-90% rounded-lg shadow-2xl w-[80%] flex flex-col items-center h-[700px]">
           <h3 className='text-white text-2xl font-light mt-6'>Let’s start with the basics.</h3>

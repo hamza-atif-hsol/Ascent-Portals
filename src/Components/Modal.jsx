@@ -7,13 +7,13 @@ const Modal = ({ id, title, children, onClose, selectedType }) => {
       tabIndex="-1"
       aria-hidden="true"
       className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
-      onClick={onClose} 
+      onClick={onClose}
     >
       <div
-        className="relative bg-[#152e4d] rounded-lg shadow-lg w-full max-w-4xl"
-        onClick={(e) => e.stopPropagation()} 
+        className="relative bg-[#152e4d] rounded-lg shadow-lg w-full max-w-4xl mx-4 md:mx-6 lg:mx-8"
+        onClick={(e) => e.stopPropagation()}
       >
-        <div className="flex items-center justify-between p-4  border-[#151c39] rounded-t-lg">
+        <div className="flex items-center justify-between p-4 border-[#151c39] rounded-t-lg">
           <h3 className="text-lg font-semibold text-white">{title}</h3>
           <button
             type="button"
@@ -38,11 +38,11 @@ const Modal = ({ id, title, children, onClose, selectedType }) => {
             <span className="sr-only">Close modal</span>
           </button>
         </div>
-        <div className="flex">
-          <div className="flex flex-col items-center justify-center bg-[#152e4d] p-6 rounded-l-lg w-[50%]">
+        <div className="flex flex-col lg:flex-row">
+          <div className="flex flex-col items-center justify-center bg-[#152e4d] p-4 md:p-6 lg:p-8 rounded-l-lg lg:w-[50%] w-full">
             {children}
           </div>
-          <div className="flex flex-col justify-center p-8 w-[50%]">
+          <div className="flex flex-col justify-center p-4 md:p-6 lg:p-8 w-full lg:w-[50%]">
             <div className="mb-2">
               <label htmlFor="">Document Type</label>
               <div className="mb-4 mt-2">
