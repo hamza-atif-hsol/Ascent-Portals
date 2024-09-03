@@ -266,7 +266,7 @@ const UserForm = () => {
 
   return (
     <div className="min-h-screen flex bg-gradient-to-r from-[#0c1f37] from-10% to-[#103649] to-90%">
-      <SideBar portalType="Customer" />
+      {/* <SideBar portalType="Customer" /> */}
       <div className="my-8 mt-[8%] bg-gradient-to-r from-[#0d3b66] from-10% to-[#0b1e33] to-90% rounded-lg shadow-[0px_6px_20px_5px_rgba(0,0,0,0.4)] w-[90%] ml-[7%] p-6 flex flex-col items-center justify-center">
         <div className="w-full flex flex-col justify-between h-full">
           <form onSubmit={(e) => e.preventDefault()} className="flex-grow flex flex-wrap gap-4">
