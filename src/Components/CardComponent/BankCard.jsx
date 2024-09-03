@@ -22,6 +22,7 @@ const BankCard = () => {
       <div className="bg-gradient-to-b from-[#0e325a] from-10% to-[#141c3a] to-100% rounded-md border-[#1b3050] border-[1px] shadow-[0px_6px_20px_rgba(0,0,0,0.9)] mb-16 px-2 sm:px-4 flex flex-col items-center justify-center h-full w-full">
         <CardHeader
           FundName="Bank List"
+          fundClassName="text-white"
           showButton={true}
           BtnText="Add New Bank"
           showLogo={false}

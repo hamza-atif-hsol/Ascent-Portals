@@ -41,6 +41,7 @@ const ApplicationCard = () => {
       <div className="bg-gradient-to-b from-[#0e325a] from-10% to-[#141c3a] to-100% rounded-md border-[#1b3050] border-[1px] shadow-[0px_6px_20px_rgba(0,0,0,0.9)] mb-8 flex flex-col items-center justify-center h-full w-full">
         <CardHeader
           FundName="Review & Sign Documents"
+          fundClassName="text-white"
           showButton={false}
           BtnText="Add New Bank"
           showLogo={false}
@@ -66,6 +67,7 @@ const ApplicationCard = () => {
       <div className="bg-gradient-to-b from-[#0e325a] from-10% to-[#141c3a] to-100% rounded-md border-[#1b3050] border-[1px] shadow-[0px_6px_20px_rgba(0,0,0,0.9)] mb-8 flex flex-col items-center justify-center h-full w-full">
         <CardHeader
           FundName="Trasaction History"
+          fundClassName="text-white"
           showButton={false}
           BtnText="Add New Bank"
           showLogo={false}

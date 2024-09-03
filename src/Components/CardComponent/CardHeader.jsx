@@ -25,7 +25,7 @@ const CardHeader = ({
             className={`w-10 h-auto rounded-md ${logoClassname}`}
           />
         )}
-        <h3 className={`text-white font-medium ${fundClassName}`}>{FundName}</h3>
+        <h3 className={`font-medium ${fundClassName}`}>{FundName}</h3>
       </div>
 
       {middleContent && <div className="flex x">{middleContent}</div>}

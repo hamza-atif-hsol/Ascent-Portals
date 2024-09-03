@@ -1,9 +1,9 @@
 import React from "react";
 
-const Table = ({ headers, rows, renderRow }) => {
+const Table = ({ headers, rows, renderRow, className }) => {
   return (
-    <div className="w-full overflow-x-auto mt-4">
-      <table className="w-full sm:w-[98%] mx-3">
+    <div className="w-full overflow-x-auto">
+      <table className={`w-full ${className}`}>
         <thead>
           <tr className="bg-[#12273f] text-[#6e84a3] sm:text-[10px] text-[6px] text-left font-light uppercase border-[#1b3050] border-b-[1px]">
             {headers.map((header, index) => (
@@ -28,13 +28,12 @@ const Table = ({ headers, rows, renderRow }) => {
               <td
                 colSpan={headers.length}
                 className="text-center py-4 text-[#6e84a3]"
-              >
-                
-              </td>
+              ></td>
             </tr>
           )}
         </tbody>
       </table>
+      
     </div>
   );
 };

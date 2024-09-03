@@ -10,7 +10,9 @@ const Header = ({ subheading, heading, showButton, onButtonClick }) => {
           <h6 className="text-[10px] text-[#6e84a3] uppercase tracking-wider ">
             {subheading}
           </h6>
-          <h1 className="sm:text-2xl text-xs text-white sm:font-medium ">{heading}</h1>
+          <h1 className="sm:text-2xl text-xs text-white sm:font-medium ">
+            {heading}
+          </h1>
         </div>
 
         {showButton && (
