@@ -3,7 +3,7 @@ import SideBar from "./SideBar";
 import Button from "./Button";
 import UserType from './Screens/UserType';
 import UserForm from './Screens/UserForm';
-import Documents from './Screens/Documents';
+import Documents from "./Screens/Documents";
 import FaceVerification from './Screens/FaceVerification';
 import VCIP from './Screens/VCIP';
 import Application from "./Screens/Application";
