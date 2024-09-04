@@ -50,7 +50,7 @@ const MainDocuments = () => {
             showButton={false}
             //   onButtonClick={handleClick}
           />
-          <div className="bg-gradient-to-b from-[#0e325a] from-10% to-[#141c3a] to-100% rounded-md border-[#1b3050] border-[1px] shadow-[0px_6px_20px_rgba(0,0,0,0.9)] mb-8 flex flex-col items-center justify-center h-full w-full">
+          <div className="ml-6 bg-gradient-to-b from-[#0e325a] from-10% to-[#141c3a] to-100% rounded-md border-[#1b3050] border-[1px] shadow-[0px_6px_20px_rgba(0,0,0,0.9)] mb-8 flex flex-col items-center justify-center h-full">
             <CardHeader
               showLogo={false}
               showButton={false}
@@ -59,7 +59,7 @@ const MainDocuments = () => {
               className=""
               showField={false}
             />
-            <div className="flex flex-col items-center w-full sm:flex-row py-10 w-full px-10 gap-6">
+            <div className="flex flex-col items-center w-full sm:flex-row py-10 px-10 gap-6">
               <Dropdown
                 label="Document Category"
                 options={documentCategoryOptions}
