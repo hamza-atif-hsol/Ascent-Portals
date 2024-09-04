@@ -13,6 +13,9 @@ const CardHeader = ({
   middleContent = null,
   rightContent = null,
   BtnClassName,
+  showField = true,
+  fieldClassname = "",
+  fieldPlaceholder = "",
 }) => {
   return (
     <div
@@ -38,6 +41,14 @@ const CardHeader = ({
           <Button
             text={BtnText}
             className={BtnClassName}
+          />
+        )}
+        {showField && (
+          <input
+            type="text"
+            placeholder={fieldPlaceholder}
+            className={`bg-[#043f63] text-white p-2 shadow-[0px_6px_20px_rgba(0,0,0,0.9)] rounded-md border border-[#1c3758] placeholder-[#6e84a3] text-sm ${fieldClassname}
+               `}
           />
         )}
       </div>
