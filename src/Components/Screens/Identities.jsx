@@ -66,11 +66,11 @@ const Identities = () => {
               text="Create New Identity"
             />
           </div>
-          <hr className=" w-[99%] border-t-[1px] border-t-[#6e84a3] opacity-20 mb-6 mx-6" />
+          <hr className="  border-t-[1px] border-t-[#6e84a3] opacity-20 mb-6 ml-6" />
         </div>
-        <div className="flex flex-col w-full items-center justify-center ml-6">
+        <div className="flex flex-col w-full items-center justify-center sm:ml-6">
           <div className="bg-gradient-to-b from-[#0e325a] from-10% to-[#141c3a] to-100% rounded-t-md border-[#1b3050] border-b-[1px] shadow-[0px_6px_20px_rgba(0,0,0,0.9)]  flex flex-col items-center justify-center h-full w-full">
-            <p className="py-2 text-[#ee9d0b] text-xs w-full px-4">
+            <p className="py-2 text-[#ee9d0b] sm:text-xs text-[8px] w-full px-4">
               Please note that you can set your identities to "Inactive" or
               "Active" by using the toggle button. Your submitted account
               applications will not be impacted if you set your identities as

@@ -50,7 +50,7 @@ const MainDocuments = () => {
             showButton={false}
             //   onButtonClick={handleClick}
           />
-          <div className="bg-gradient-to-b from-[#0e325a] from-10% to-[#141c3a] to-100% rounded-md border-[#1b3050] border-[1px] shadow-[0px_6px_20px_rgba(0,0,0,0.9)] mb-8 flex flex-col items-center justify-center h-full w-full">
+          <div className="bg-gradient-to-b from-[#0e325a] from-10% to-[#141c3a] to-100% rounded-md border-[#1b3050] border-[1px] shadow-[0px_6px_20px_rgba(0,0,0,0.9)] mb-8 flex flex-col items-center justify-center h-full sm:ml-6">
             <CardHeader
               showLogo={false}
               showButton={false}
@@ -59,7 +59,7 @@ const MainDocuments = () => {
               className=""
               showField={false}
             />
-            <div className="flex flex-col items-center w-full sm:flex-row py-10 w-full px-10 gap-6">
+            <div className="flex flex-col items-center w-full sm:flex-row py-10 px-4 sm:px-10 gap-6">
               <Dropdown
                 label="Document Category"
                 options={documentCategoryOptions}
@@ -72,7 +72,7 @@ const MainDocuments = () => {
                 value={fund}
                 onChange={(e) => setFund(e.target.value)}
               />
-              <div className="relative flex flex-col text-white w-1/4">
+              <div className="relative flex flex-col text-white sm:w-1/4 w-full">
                 <label className="mb-2">As of Date</label>
                 <input
                   type="text"
@@ -92,7 +92,7 @@ const MainDocuments = () => {
               </div>
             </div>
           </div>
-          <div className="bg-gradient-to-b from-[#0e325a] from-10% to-[#141c3a] to-100% rounded-md border-[#1b3050] border-[1px] shadow-[0px_6px_20px_rgba(0,0,0,0.9)] mb-8 flex flex-col items-center justify-center h-full w-full">
+          <div className="bg-gradient-to-b from-[#0e325a] from-10% to-[#141c3a] to-100% rounded-md border-[#1b3050] border-[1px] shadow-[0px_6px_20px_rgba(0,0,0,0.9)] mb-8 flex flex-col items-center justify-center h-full sm:ml-6">
             <CardHeader
               FundName="Search Result"
               fundClassName="text-white"

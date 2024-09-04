@@ -92,7 +92,6 @@ function Dashboard() {
                   />
                 </div>
                 <FinancialChart data={data} year="2024" chartType="bar" />
-
               </div>
             </div>
           </div>
