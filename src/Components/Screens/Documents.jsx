@@ -75,16 +75,16 @@ const Documents = () => {
               <div className="relative flex flex-col text-white w-1/4">
                 <label className="mb-2">As of Date</label>
                 <input
-                  type="date"
+                  type="text"
                   value={asOfDate}
                   onFocus={(e) => (e.target.type = "")}
-                  onBlur={(e) => (e.target.type = asOfDate ? "text" : "")}
+                  onBlur={(e) => (e.target.type = asOfDate ? "text" : "text")}
                   placeholder="As Of Date"
                   onChange={(e) => setAsOfDate(e.target.value)}
                   className="bg-[#043f63] text-white p-2 shadow-[0px_6px_20px_rgba(0,0,0,0.9)] rounded-md border border-[#1c3758] placeholder-[#6e84a3] text-sm"
                 />
               </div>
-              <div>
+              <div> 
                 <Button
                   className="bg-[#e63757] text-white py-6 px-6 font-light rounded-md"
                   text="Clear Filter"
