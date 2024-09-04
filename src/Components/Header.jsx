@@ -1,7 +1,12 @@
 import React from "react";
 import Button from "./Button";
+import { useNavigate } from "react-router-dom";
 
 const Header = ({ subheading, heading, showButton, onButtonClick }) => {
+  const navigate = useNavigate();
+  function handleClick() {
+    navigate("/stepper")
+  }
   return (
     <div className="ml-6 sm:mt-0 mt-10 ">
       <div className="flex items-center justify-between ">
@@ -25,7 +30,7 @@ const Header = ({ subheading, heading, showButton, onButtonClick }) => {
 
           <Button
             text="Create An Account"
-            // onClick={handleClick}
+            onClick={handleClick}
             className="bg-[#2c7be5] text-white font-light mr-8 rounded-lg py-6 px-8 text-sm sm:text-md"
             // icon={<FaCreditCard />}
             iconPosition="left"

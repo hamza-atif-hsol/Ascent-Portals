@@ -388,7 +388,9 @@ const EntityTypeSelection = () => {
         </div>
         </div>
           <hr className="w-[100%] border-t-[1px] border-t-[#6e84a3] opacity-30 my-4 mx-8 mt-[10%]" />
-          <div className='text-white space-x-[850px]'>
+          {/* <div className='text-white space-x-[850px]'> */}
+          <div className="flex lg:space-x-[75%] md:justify-center sm:justify-center w-full p-4 xs:justify-center">
+
           <button
                 onClick={handleNextClick}
                 className="py-2 px-4 mb-3 border-[0.01px] text-white p-3 rounded-md hover:border-[#6e84a3] focus:outline-none"

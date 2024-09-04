@@ -94,7 +94,7 @@ const SideBar = ({ portalType }) => {
           {portalType === "Customer" && (
             <>
               <Tooltip content="Dashboard">
-                <Link to="">
+                <Link to="/">
                   <FiHome
                     size={18}
                     className="text-[#6e84a3] hover:text-white transition-colors duration-200"
@@ -102,7 +102,7 @@ const SideBar = ({ portalType }) => {
                 </Link>
               </Tooltip>
               <Tooltip content="Documents">
-                <Link to="">
+                <Link to="/documents">
                   <IoDocumentsOutline
                     size={18}
                     className="text-[#6e84a3] hover:text-white transition-colors duration-200"
@@ -110,7 +110,7 @@ const SideBar = ({ portalType }) => {
                 </Link>
               </Tooltip>
               <Tooltip content="Accounts">
-                <Link to="">
+                <Link to="/accounts">
                   <MdOutlineAccountTree
                     size={18}
                     className="text-[#6e84a3] hover:text-white transition-colors duration-200"
@@ -118,7 +118,7 @@ const SideBar = ({ portalType }) => {
                 </Link>
               </Tooltip>
               <Tooltip content="Identities">
-                <Link to="">
+                <Link to="/identities">
                   <TbUsers
                     size={14}
                     className="text-[#6e84a3] hover:text-white transition-colors duration-200"

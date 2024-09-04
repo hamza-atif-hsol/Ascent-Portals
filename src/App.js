@@ -20,15 +20,15 @@ function App() {
         {/* <Route path="/accounts" element={<AccountScreen />} /> */}
         {/* <Route path="/" element={<DynamicForm />} /> */}
         {/* <Route path="/" element={<UserType />} /> */}
-        <Route path="/" element={<UserType />} />
+        <Route path="/" element={<Dashboard />} />
         <Route path="/user-form" element={<UserForm />} />
         <Route path="/accounts" element={<AccountScreen />} />
         <Route path="/identities" element={<Identities />} />
         <Route path="/documents" element={<MainDocuments />} />
-        <Route path="/faceverification" element={<FaceVerifacation />} />
-        <Route path="/vcip" element={<VCIP />} />
+        {/* <Route path="/faceverification" element={<FaceVerifacation />} />
+        <Route path="/vcip" element={<VCIP />} /> */}
         <Route path="/stepper" element={<Steppers />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        {/* <Route path="/dashboard" element={<Dashboard />} /> */}
       </Routes>
     </BrowserRouter>
   );

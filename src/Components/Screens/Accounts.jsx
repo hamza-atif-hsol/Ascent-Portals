@@ -2,10 +2,12 @@ import React from "react";
 import SideBar from "../SideBar";
 import Header from "../Header";
 import Card from "../CardComponent/AccountCard";
+import { useNavigate } from "react-router-dom";
 
 const Accounts = () => {
+  const navigate=useNavigate();
   function handleClick() {
-    console.log("test");
+    navigate("/stepper")
   }
 
   return (

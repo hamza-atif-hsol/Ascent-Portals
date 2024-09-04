@@ -14,7 +14,7 @@ const CardHeader = ({
   rightContent = null,
   BtnClassName,
   onClick, // New onClick prop
-  showField = true,
+  showField = false,
   fieldClassname = "",
   fieldPlaceholder = "",
 }) => {
