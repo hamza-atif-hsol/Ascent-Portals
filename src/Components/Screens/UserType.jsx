@@ -331,8 +331,7 @@ const EntityTypeSelection = () => {
   return (
     <>
       {/* <SideBar portalType="Customer" /> */}
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-[#0c1f37] from-10% to-[#103649] to-90%">
-        <div className="bg-gradient-to-r from-[#0d3b66] from-10% to-[#0b1e33] to-90% rounded-lg shadow-2xl w-[80%] flex flex-col items-center h-[700px]">
+        <div className=" w-full flex flex-col items-center h-[700px]">
           <h3 className='text-white text-2xl font-light mt-6'>Let’s start with the basics.</h3>
           <p className='text-slate-500 text-xs font-light mt-2'>Please select if you are applying as an individual or corporate. You may attach an existing identity or create a new one.</p>
 
@@ -403,7 +402,6 @@ const EntityTypeSelection = () => {
             Next
           </button>
           </div>
-        </div>
       </div>
     </>
   );

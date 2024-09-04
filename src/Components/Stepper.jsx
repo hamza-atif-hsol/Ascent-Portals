@@ -6,6 +6,9 @@ import UserForm from './Screens/UserForm';
 import Documents from './Screens/Documents';
 import FaceVerification from './Screens/FaceVerification';
 import VCIP from './Screens/VCIP';
+import Application from "./Screens/Application";
+import BankWallets from "./Screens/BankWallets";
+import Summary from "./Screens/Summary";
 
 const steps = [
   "Select Account",
@@ -48,7 +51,14 @@ function Steppers() {
       return <FaceVerification />;
     } else if (currentStep === 5) {
       return <VCIP />;
-    } else {
+    }
+    else if (currentStep === 6) {
+      return <BankWallets />;}
+      else if (currentStep === 7) {
+        return <Application />;} 
+        else if (currentStep === 8) {
+          return <Summary />;}
+    else {
       return null;
     }
   };

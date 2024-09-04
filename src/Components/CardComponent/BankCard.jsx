@@ -18,7 +18,6 @@ const BankCard = () => {
   const rows = [];
 
   return (
-    <div className="bg-gradient-to-b from-[#0e325a] from-10% to-[#141c3a] to-100% rounded-lg border-[#1b3050] border-[1px] shadow-[2px_6px_20px_rgba(0,0,0,0.9)] pt-8 sm:px-4 flex flex-col items-center justify-center h-full w-full sm:w-[98%] sm:mt-0 mt-12">
       <div className="bg-gradient-to-b from-[#0e325a] from-10% to-[#141c3a] to-100% rounded-md border-[#1b3050] border-[1px] shadow-[0px_6px_20px_rgba(0,0,0,0.9)] mb-16 px-2 sm:px-4 flex flex-col items-center justify-center h-full w-full">
         <CardHeader
           FundName="Bank List"
@@ -26,6 +25,7 @@ const BankCard = () => {
           showButton={true}
           BtnText="Add New Bank"
           showLogo={false}
+          BtnClassName="bg-[#2c7be5] text-white font-medium border border-gray-700 rounded-lg py-6 px-7"
         />
         <Table
           headers={headers}
@@ -44,22 +44,8 @@ const BankCard = () => {
           )}
         />
       </div>
-      <hr className="w-full border-t-[1px] border-t-[#6e84a3] opacity-20 " />
-      <div className="flex w-full justify-between my-4">
-        <Button
-          className="bg-[#152e4d] text-white py-4 px-5 sm:py-6 sm:px-7 font-medium border rounded-md"
-          text="Back"
-          // onClick={}
-          icon={false}
-        />
-        <Button
-          className="bg-[#2aaf2a] text-white py-4 px-5 sm:py-6 sm:px-7 font-medium rounded-md"
-          text="Next"
-          // onClick={}
-          icon={false}
-        />
-      </div>
-    </div>
+      
+    
   );
 };
 

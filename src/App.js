@@ -14,6 +14,7 @@ import Documents from "./Components/Screens/Documents";
 import FaceVerifacation from "./Components/Screens/FaceVerification";
 import VCIP from "./Components/Screens/VCIP"
 import  Steppers  from './Components/Stepper';
+import Dashboard from './Components/Dashboard';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path="/faceverification" element={<FaceVerifacation/>} />
         <Route path="/vcip" element={<VCIP/>} />
         <Route path="/stepper" element={<Steppers/>} />
+        <Route path='/dashboard' element={<Dashboard/>}/>
 
       </Routes>
     </BrowserRouter>

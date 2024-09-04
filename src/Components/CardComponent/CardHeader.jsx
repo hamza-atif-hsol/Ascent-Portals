@@ -12,6 +12,7 @@ const CardHeader = ({
   className = "",
   middleContent = null,
   rightContent = null,
+  BtnClassName,
 }) => {
   return (
     <div
@@ -36,7 +37,7 @@ const CardHeader = ({
         {showButton && (
           <Button
             text={BtnText}
-            className="bg-[#2c7be5] text-white font-medium border border-gray-700 rounded-lg py-6 px-7 "
+            className={BtnClassName}
           />
         )}
       </div>
