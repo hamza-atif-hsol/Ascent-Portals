@@ -33,7 +33,6 @@ const Table = ({ headers, rows, renderRow, className }) => {
           )}
         </tbody>
       </table>
-      
     </div>
   );
 };

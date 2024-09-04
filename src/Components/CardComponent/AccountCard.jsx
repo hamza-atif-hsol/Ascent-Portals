@@ -4,7 +4,7 @@ import MiniCards from "./MiniCards";
 import { FiCheckCircle } from "react-icons/fi";
 import { MdOutlineAccessTime } from "react-icons/md";
 
-const Card = () => {
+const AccountCard = () => {
   const leftContentCard = (
     <div className="flex flex-col gap-1">
       <h3 className="text-lg font-semibold text-white">Muhammad Imran AX</h3>
@@ -112,4 +112,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default AccountCard;

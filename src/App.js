@@ -5,6 +5,7 @@ import BankWallets from "./Components/Screens/BankWallets";
 import Application from "./Components/Screens/Application";
 import Summary from "./Components/Screens/Summary";
 import Identities from "./Components/Screens/Identities";
+import Documents from "./Components/Screens/Documents";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/application" element={<Application />} />
         <Route path="/summary" element={<Summary />} />
         <Route path="/identities" element={<Identities />} />
+        <Route path="/documents" element={<Documents />} />
       </Routes>
     </BrowserRouter>
   );

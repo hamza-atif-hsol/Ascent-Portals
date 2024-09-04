@@ -6,7 +6,7 @@ import { CiSettings } from "react-icons/ci";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { FiHome } from "react-icons/fi";
 import { FaRegBell } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import { IoDocumentsOutline } from "react-icons/io5";
 import { MdOutlineAccountTree } from "react-icons/md";
 import { PiCompass } from "react-icons/pi";
@@ -15,12 +15,13 @@ import { AiOutlineMenu } from "react-icons/ai";
 
 const SideBar = ({ portalType }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const location = useLocation();
 
-  // Toggle Sidebar Visibility
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
 
+  const isActive = (path) => location.pathname === path;
   return (
     <>
       <button
@@ -31,7 +32,7 @@ const SideBar = ({ portalType }) => {
       </button>
 
       <div
-        className={`bg-[#152e4d] h-screen w-16 fixed flex flex-col content-between items-center md:hidden sm:hidden xs:hidden py-6 ${
+        className={`bg-[#152e4d] h-screen w-16 fixed flex flex-col items-center md:hidden sm:hidden xs:hidden py-6 ${
           !isSidebarOpen ? "lg:flex" : "lg:hidden"
         }`}
       >
@@ -92,34 +93,44 @@ const SideBar = ({ portalType }) => {
           {portalType === "Customer" && (
             <>
               <Tooltip content="Dashboard">
-                <Link to="">
+                <Link to="/dashboard">
                   <FiHome
                     size={18}
-                    className="text-[#6e84a3] hover:text-white transition-colors duration-200"
+                    className={`text-[#6e84a3] hover:text-white transition-colors duration-200 ${
+                      isActive("/dashboard") ? "border-l-4 border-blue-500" : ""
+                    }`}
                   />
                 </Link>
               </Tooltip>
               <Tooltip content="Documents">
-                <Link to="">
+                <Link to="/documents">
                   <IoDocumentsOutline
                     size={18}
-                    className="text-[#6e84a3] hover:text-white transition-colors duration-200"
+                    className={`text-[#6e84a3] hover:text-white transition-colors duration-200 ${
+                      isActive("/documents") ? "border-l-4 border-blue-500" : ""
+                    }`}
                   />
                 </Link>
               </Tooltip>
               <Tooltip content="Accounts">
-                <Link to="">
+                <Link to="/accounts">
                   <MdOutlineAccountTree
                     size={18}
-                    className="text-[#6e84a3] hover:text-white transition-colors duration-200"
+                    className={`text-[#6e84a3] hover:text-white transition-colors duration-200 ${
+                      isActive("/accounts") ? "border-l-4 border-blue-500" : ""
+                    }`}
                   />
                 </Link>
               </Tooltip>
               <Tooltip content="Identities">
-                <Link to="">
+                <Link to="/identities">
                   <TbUsers
                     size={14}
-                    className="text-[#6e84a3] hover:text-white transition-colors duration-200"
+                    className={`text-[#6e84a3] hover:text-white transition-colors duration-200 ${
+                      isActive("/identities")
+                        ? "border-l-2 border-blue-500"
+                        : ""
+                    }`}
                   />
                 </Link>
               </Tooltip>
@@ -127,7 +138,11 @@ const SideBar = ({ portalType }) => {
                 <Link to="">
                   <PiCompass
                     size={18}
-                    className="text-[#6e84a3] hover:text-white transition-colors duration-200"
+                    className={`text-[#6e84a3] hover:text-white transition-colors duration-200 ${
+                      isActive("/walkthrough")
+                        ? "border-l-4 border-blue-500"
+                        : ""
+                    }`}
                   />
                 </Link>
               </Tooltip>

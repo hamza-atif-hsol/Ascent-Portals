@@ -1,6 +1,6 @@
 import React from "react";
 import SideBar from "../SideBar";
-import Card from "../CardComponent/Card";
+import Card from "../CardComponent/AccountCard";
 import BankCard from "../CardComponent/BankCard";
 
 const BankWallets = () => {

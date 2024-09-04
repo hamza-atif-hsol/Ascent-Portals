@@ -1,7 +1,7 @@
 import React from "react";
 import SideBar from "../SideBar";
 import Header from "../Header";
-import Card from "../CardComponent/Card";
+import Card from "../CardComponent/AccountCard";
 
 const Accounts = () => {
   function handleClick() {
@@ -18,7 +18,7 @@ const Accounts = () => {
           showButton={true}
           onButtonClick={handleClick}
         />
-        
+
         <Card />
         <Card />
         <Card />
